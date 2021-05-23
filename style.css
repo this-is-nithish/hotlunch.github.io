@@ -1,0 +1,355 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+/* home page styling-page-1 */
+
+#header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(45deg,rgba(75, 43, 75, 0.76),rgba(176, 236, 206, 0.767)),url(images/banner.png);   
+    background-position: center;    
+    background-size: cover;
+    position: relative;
+    
+    
+}
+#nav-bar{
+    display: flex;
+    padding: 0.2rem 6rem;
+    justify-content: space-between 20%;
+    align-items: center;
+    position: fixed;
+    z-index: 100;
+    min-height: 10%;
+
+}
+#header-img{
+    width: 150px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    letter-spacing: 2px;
+    list-style: none;
+    display: inline-block;
+    padding: 20px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 20px;
+}
+.nav-links ul li ::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #ff000057;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover ::after{
+    width: 100%;
+}
+#text-box{
+    font-size: 50px;
+    width: 90%;
+    color:rgba(189, 241, 224, 0.418);
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box-1{
+    font-size: 25px;
+    width: 70%;
+    color:rgba(196, 225, 238, 0.726);
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.visit-btn{
+    display: inline-block;
+    text-decoration: solid;
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(212, 218, 194);
+    padding: 10px 20px;
+    font-size: 23px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+
+}
+.visit-btn:hover{
+    border: rgb(142, 187, 187);
+    background: rgba(223, 233, 86, 0.473);
+    transition: 1s;
+}
+nav .fa{
+    display: none;
+}
+
+/* about page styling pg-2*/
+#abc{
+min-height: 100vh;
+}
+#about-div{
+    min-height: 100vh;
+    background-image: url(images/about-picture.png);
+    background-color: rgb(0, 0, 0);
+   /* background-image:url(images/about-picture.png); */
+    color: white;
+    position: relative;
+    background-size: cover;
+    background-position: center 10%;
+    padding-left: 4%;
+    padding-right: 5%;
+    
+    
+}
+
+#hot-lunch-story{
+    font-size: xx-large;
+    letter-spacing: 0.3rem;
+    
+    
+}
+
+#about-text{
+    font-size: 1.4rem;
+    margin-bottom: 25vh;
+    position: relative;
+    top:20vh;
+
+}
+#hot-lunch{
+    margin-bottom: 20vh;
+    font-size: 5rem;
+    color: red;
+    
+}
+#about-text-1{
+    font-size: 1.2rem;
+    position: absolute;
+    bottom: 15%;
+    
+}
+
+/* page-3 style- contact*/
+
+#contact{
+   background-image: url(images/contact-bg-3.png),url(images/contact-logo-6.png);
+   background-size: 30%,30% ;
+   background-repeat: no-repeat;
+   background-position: 80% -10% ,83% 100%;
+   background-color: rgb(212, 144, 144);
+   min-height: 100vh;
+   color: rgb(255, 227, 227);
+   padding-left: 8%;
+   
+}
+#contact-1{
+min-height: 50vh;
+position: relative;
+top: 20vh;
+z-index: 100;
+}
+#newsletter{
+    letter-spacing: 3px;
+}
+#email{
+    width: 15%;
+    min-height: 40px;
+    background-color: inherit;
+    border-radius: 20px;
+    border-color: rgb(139, 52, 52);
+    border-width: 4px;
+}
+#submit{
+    width: 15%;
+    height: 40px;
+    background-color: inherit;
+    border-radius: 30px;
+    border-color: rgb(173, 77, 77);
+    font-size: large;
+    letter-spacing: 2px;
+    border-width: 4px;
+}
+#contact-2{
+min-height: 50vh;
+position: relative;
+font-size: larger;
+letter-spacing: 2px;
+bottom: 3vh;
+font-weight: bold;
+}
+
+#video{
+width: 30vw;
+min-height: 35vh;
+}
+
+
+
+
+@media(max-width: 768px)
+{
+    /* small screen page-1*/
+
+    .header{
+        background-image: linear-gradient(rgba(29, 20, 29, 0.74),rgba(176, 236, 206, 0.76)),url(images/bg1.jpeg);       
+        background-size: cover;
+        position: relative;
+
+    }
+    .text-box-1{
+        font-size: 15px;
+        top: 70%;
+    }
+    #text-box{
+        font-size: 30px;
+    }
+    .visit-btn{
+        border-color: rgb(212, 218, 194);
+        padding: 2%;
+    }
+    .nav-links ul li{
+        display: block;    
+    }
+    .nav-links ul li ::after{
+        display: inline;
+    }
+    .nav-links ul li{
+        display: inline;
+    }
+    
+    /* small screen-page-2*/
+
+    #about-div{
+        min-height: 100vh;
+        
+
+
+    }
+    #hot-lunch-story{
+        font-size: bold;
+        letter-spacing: 0.3rem;
+        
+    }
+    
+    #about-text{
+        font-size: 1.1rem;
+        position: relative;
+        top:10vh;
+        margin-bottom: 12vh;
+    }
+    #hot-lunch{  
+        font-size: 3rem;
+        color: red;
+        margin-bottom:16vh;
+    }
+    #about-text-1{
+        font-size: 0.9rem;
+        position: absolute;
+        bottom: 9%;
+
+    }
+
+    /* small screen-page-3*/
+    #contact{
+        background-position: top 4% left, bottom -2% right;
+    }
+    #contact-1{
+        position: relative;
+        bottom: 50vh;
+    }
+    #newsletter{
+        font-size: 1.1rem;
+    }
+    #email{
+        width: 70%;
+        height: 10%;
+        font-size: 1rem;
+    }
+    #submit{
+       width: 40%;
+       height: 10%;
+    }
+    #video{
+       width: 80%;
+       
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+#about-main{
+    width: 50%;
+    min-height: 100vh;
+}
+#img-about{
+    width: 50%;
+    height: 100%; 
+
+}
+#about-text{
+    height: 20vh;
+    width: 50vw;
+    padding: 2rem;
+    
+    color: rgb(0, 0, 0);
+    position: relative;
+    
+    font-size: 1.1rem;
+
+}
+
+
+.about-picture{
+    width: 15rem;
+    height: 100%;
+}
+#hot-lunch{
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+    position: relative;
+    top: 10rem;
+    left: 2rem;
+    
+    font-weight: bold;
+
+    
+}
+#about-text-1{
+    color: rgb(0, 0, 0);
+   
+    
+    left: 2rem;
+    font-size: 1.1em;
+    font-weight: normal;
+    float: bottom;
+    
+
+}
+*/

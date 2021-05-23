@@ -1,0 +1,121 @@
+<!--User Story #1: My product landing page should have a header element with a corresponding id="header".
+
+User Story #2: I can see an image within the header element with a corresponding id="header-img". A company logo would make a good image here.
+
+User Story #3: Within the #header element I can see a nav element with a corresponding id="nav-bar".
+
+User Story #4: I can see at least three clickable elements inside the nav element, each with the class nav-link.
+
+User Story #5: When I click a .nav-link button in the nav element, I am taken to the corresponding section of the landing page.
+
+User Story #6: I can watch an embedded product video with id="video".
+
+User Story #7: My landing page has a form element with a corresponding id="form".
+
+User Story #8: Within the form, there is an input field with id="email" where I can enter an email address.
+
+User Story #9: The #email input field should have placeholder text to let the user know what the field is for.
+
+User Story #10: The #email input field uses HTML5 validation to confirm that the entered text is an email address.
+
+User Story #11: Within the form, there is a submit input with a corresponding id="submit".
+
+User Story #12: When I click the #submit element, the email is submitted to a static page (use this mock URL: https://www.freecodecamp.com/email-submit).
+
+User Story #13: The navbar should always be at the top of the viewport.
+
+User Story #14: My product landing page should have at least one media query.
+
+User Story #15: My product landing page should utilize CSS flexbox at least once. -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">
+    <title>HoT LuNcH</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!--HOME-DIV-->
+
+    <header id="header">   
+        <nav id="nav-bar">
+            <a href="index.html"><img id="header-img" src="images/logo.png" ></a>
+            <div class="nav-links">
+                
+                <ul>
+                    <li><a class="nav-link" href='#header'>HOME</a></li>
+                    <li><a class="nav-link" href='#about-div'>ABOUT</a></li>
+                    <li><a class="nav-link" href="#contact">CONTACT</a></li>
+                </ul>
+            </div>
+            
+        </nav> 
+    </header>
+    <div id="text-box">
+        <h1><i>HoT LuNcH<br></i></h1><h2>The Best in town.</h2>
+    </div>    
+    <div class="text-box-1">
+        <h1><i>Enjoy your favorite food in this lockdown too<br> JOIN US IN THIS FOOD WEB!</i></h1><br>
+        <a href='#form'class="visit-btn">Sign Up for our weekly newsletter</a>
+    </div>
+    
+    <!--ABOUT DIV-->
+
+<div id="abc">
+    <div id="about-div">
+    <!--<div id="img-about"><ig class= "about-picture" src="images/about-picture.png"></div>  child-1-->
+       
+            <div id="about-text"><header id="hot-lunch-story">Story</header><br>
+              The story of the HoT LuNcH brand started more than 50 years ago when Dr. Sethuraman, a nuclear physicist, changed the life of a college student with a few simple words, Let’s open a Fried Chicken shop.<br>
+            </div>
+              <div id="hot-lunch"> HoT LuNcH.</div> <br>
+              
+                   <div id="about-text-1">The popularity of the fried-chicken and the brand continued to grow over the decades but one thing remained the same and that was their core values and principles:<br> <br>
+               
+                        a) Always provide exceptional service to your valued guests; <br>
+                        b) Provide the highest quality menu items at a price everyone can afford and enjoy; and<br>
+                        c) Keep operating costs low and ensure you have great systems in place and never stop improving.<br>
+                           These early principles continue to serve as the foundation for HoT LuNcH restaurants around the world 
+                   </div>
+      <!--</div> child-2---> 
+  </div>
+</div>
+       
+       
+       <div id="contact">
+           <div id="contact-1">
+               <form id="form" action="https://www.freecodecamp.com/email-submit">
+                   <label id="newsletter">Subscribe to our weekly Newsletter !</h1><br><br><input type="email" name="newsletter" id="email" placeholder ="Enter your email" > </label> <br><br>
+                   <button type="submit" id="submit"> Subscribe</button>
+               </form>
+
+           </div>
+           <div id="contact-2">
+               <p>Here is our products Youtube Video:</p><br>
+            <iframe id="video" src="https://www.youtube.com/embed/uYaQ74Vqh5U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+            <p id="connect">Want to connect with us?</p> 
+            <p>E-mail us @ contact@hotlunch.com</p>
+           </div>
+       </div>
+    
+    
+</body>
+
+</html>
+<!--The HoT LuNcH Story <br> style="border:5px; color: black;
+The story of the LuNcH brand started more than 50 years ago when Dr. Sethuraman, a nuclear physicist, changed the life of a college student with a few simple words, “Let’s open a submarine sandwich shop.”
+Sethu's Subway<br>
+It was Sethu that gave college freshman Jamie the idea to open a submarine sandwich shop to help pay his tuition. Sethu provided an initial investment of Rs.85000, and a business relationship was forged that would change the landscape of the fast food industry and the lives of thousands.
+The partners opened their first restaurant in Kurla, Bombay, where they served fresh, affordable, made to order sandwiches. The popularity of the sandwiches and the brand continued to grow over the decades but one thing remained the same and that was their core values and principles:<br> <br>
+
+   a) Always provide exceptional service to your valued guests;
+   b) Provide the highest quality menu items at a price everyone can afford and enjoy; and
+   c) Keep operating costs low and ensure you have great systems in place and never stop improving.
+
+These early principles continue to serve as the foundation for HoT LuNcH restaurants around the world-->
