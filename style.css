@@ -287,6 +287,7 @@ min-height: 35vh;
     #submit{
        width: 40%;
        height: 10%;
+       margin-left: 17%;
     }
     #video{
        width: 80%;
